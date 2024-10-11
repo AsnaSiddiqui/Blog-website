@@ -1,101 +1,89 @@
-import Image from "next/image";
+import  Main  from "./components/main";
+import Title from "./components/title";
+import Footer from "./components/footer";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+ 
+   <div className="">
+   <Main/>
+   <Title/>
+   
+   <div className="main">
+   
+   
+    <div className="row1  scale-up-ver-center">
+    <div className="cards">
+      <div className="image">
+        <img src="https://t4.ftcdn.net/jpg/08/55/70/95/360_F_855709508_NAO6St1iW4AWIlD92EiPWBaDqxrjsWQi.jpg" alt="airplane skyline" />
+      </div>
+        <h1 className="title"> Top Layover Adventures</h1>
+        <p className="description"> Discover the best cities for thrilling layover adventures. Maximize your stop with exciting activities and sightseeing.</p>
+       <a href="https://www.kensingtontours.com/stories/travel-inspiration/the-best-cities-for-an-extended-stopover" target="_blank"><button className="read">Read more</button></a>
+      </div>
+
+
+      <div className="cards">
+      <div className="image">
+        <img src="https://cf.creatrip.com/original/blog/3951/csybvckb2wax1n6qoc39tudpo1asnaiw.png" alt="" />
+      </div>
+        <h1 className="title"> 24-Hour City Itineraries</h1>
+        <p className="description">Make the most of your layover with these one-day city guides. Explore key attractions without wasting a minute.</p>
+       <a href="https://airssist.com/layover-tips-tricks/" target="_blank"><button className="read">Read more</button></a> 
+      </div>
+
+
+      <div className="cards">
+      <div className="image">
+        <img src="https://blog.blacklane.com/wp-content/uploads/2019/02/Untitled-design-11.png" alt="" />
+      </div>
+        <h1 className="title"> Best Airport Lounges</h1>
+        <p className="description">Relax in style at the world's top airport lounges. Enjoy luxury amenities while waiting for your next flight.</p>
+        <a href="https://www.klook.com/blog/best-airport-lounges-in-asia/" target="_blank"><button className="read">Read more</button></a>
+      </div>
+
+      </div>
+
+      <div className="row2  scale-up-ver-center">
+      <div className="cards">
+      <div className="image">
+        <img src="https://images.unsplash.com/opengraph/1x1.png?mark=https%3A%2F%2Fimages.unsplash.com%2Fopengraph%2Flogo.png&mark-w=64&mark-align=top%2Cleft&mark-pad=50&h=630&w=1200&blend=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1511978293554-7b92f19bd77d%3Fcrop%3Dfaces%252Cedges%26h%3D630%26w%3D1200%26blend%3D000000%26blend-mode%3Dnormal%26blend-alpha%3D10%26mark-w%3D750%26mark-align%3Dmiddle%252Ccenter%26mark%3Dhttps%253A%252F%252Fimages.unsplash.com%252Fopengraph%252Fsearch-input.png%253Fw%253D750%2526h%253D84%2526txt%253Dstreet%252Bfood%2526txt-pad%253D80%2526txt-align%253Dmiddle%25252Cleft%2526txt-color%253D%252523000000%2526txt-size%253D40%2526txt-width%253D660%2526txt-clip%253Dellipsis%2526auto%253Dformat%2526fit%253Dcrop%2526q%253D60%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixid%3DM3wxMjA3fDB8MXxzZWFyY2h8M3x8c3RyZWV0JTIwZm9vZHxlbnwwfHx8fDE3MjcyMTE1NzB8MA%26ixlib%3Drb-4.0.3&blend-w=1&auto=format&fit=crop&q=60" alt="" />
+      </div>
+        <h1 className="title"> Must-Try Street Foods</h1>
+        <p className="description">Savor the best street foods during your layover. Dive into local flavors with these quick bites from around the world.</p>
+       <a href="https://www.travelandleisureasia.com/in/destinations/20-cities-and-their-best-street-foods/" target="_blank"><button className="read">Read more</button></a>
+      </div>
+
+
+      <div className="cards">
+      <div className="image">
+        <img src="https://images.unsplash.com/opengraph/1x1.png?mark=https%3A%2F%2Fimages.unsplash.com%2Fopengraph%2Flogo.png&mark-w=64&mark-align=top%2Cleft&mark-pad=50&h=630&w=1200&blend=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1542296332-2e4473faf563%3Fcrop%3Dfaces%252Cedges%26h%3D630%26w%3D1200%26blend%3D000000%26blend-mode%3Dnormal%26blend-alpha%3D10%26mark-w%3D750%26mark-align%3Dmiddle%252Ccenter%26mark%3Dhttps%253A%252F%252Fimages.unsplash.com%252Fopengraph%252Fsearch-input.png%253Fw%253D750%2526h%253D84%2526txt%253Dairport%2526txt-pad%253D80%2526txt-align%253Dmiddle%25252Cleft%2526txt-color%253D%252523000000%2526txt-size%253D40%2526txt-width%253D660%2526txt-clip%253Dellipsis%2526auto%253Dformat%2526fit%253Dcrop%2526q%253D60%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixid%3DM3wxMjA3fDB8MXxzZWFyY2h8Nnx8YWlycG9ydHxlbnwwfHx8fDE3MjgzNDI5MzB8MA%26ixlib%3Drb-4.0.3&blend-w=1&auto=format&fit=crop&q=60" alt="" />
+      </div>
+        <h1 className="title"> Stunning Airports Worldwide</h1>
+        <p className="description">These airports are more than just transit hubs. Explore jaw-dropping designs that turn airports into destinations themselves.</p>
+        <a href="https://www.aviationjobsearch.com/career-hub/articles/career-advice/general/top-ranked-airports-in-the-world" target="_blank"><button className="read">Read more</button></a>
+      </div>
+
+      <div className="cards">
+      <div className="image">
+        <img src="https://wealarms.co.uk/wp-content/uploads/2023/07/How-to-pack-a-suit-case.jpg" alt="" />
+      </div>
+        <h1 className="title"> Essential Layover Hacks</h1>
+        <p className="description">Learn top tips for navigating layovers like a pro. From packing essentials to quick airport tricks, we've got you covered.</p>
+        <a href="https://munbyn.com/blogs/tips-and-tricks/travel-packing-list" target="_blank"><button className="read">Read more</button></a>
+      </div>
+      </div>
+      </div>
+
+
+     <Footer/>
+    
+
+   
     </div>
+    
+    
+   
   );
 }
